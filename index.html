@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+<style>
+    p{
+        font-family: Roboto;
+    }
+
+    #logo {
+        display: block;
+        margin: auto;
+        padding: 25px;
+        padding-top: 150px;
+    }
+    
+    #searchbox { 
+        display: block;
+        margin: auto;
+        width: 575px;
+        height: 45px;
+        border: 1px solid rgb(224, 224, 224);
+        border-radius: 50px;
+    }
+
+    #searchbox:hover{
+        border: 1px solid rgb(236, 236, 236);
+        box-shadow: 0px 1px 3px 0px rgb(236, 236, 236);
+    }
+
+    #circle{
+        display: block;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        border: 2px solid rgb(160, 160, 160);
+        position: relative;
+        margin-top: -30px;
+        margin-left: 17px;
+    }
+
+    #line{
+        display: block;
+        width: 15px;
+        height: 5px;
+        border-right: 2px solid rgb(160, 160, 160);
+        transform: skewX(45deg);
+        position: relative;
+        margin-left: 13px;
+        margin-top: -2px;
+    }
+
+    #mic{
+        display: block;
+        float: right;
+        width: 2.75%;
+        position: relative;
+        margin-top: -20px;
+        margin-right: 20px;
+
+    }
+
+    .searchbar{
+        font-size: 17px;
+        display: block;
+        height: 45px;
+        width: 485px;
+        margin: auto;
+        border: 0px;
+    }
+
+    @media (max-width: 640px) {
+        #searchbox {
+            width: 90vw;
+        }
+    }
+
+    input [type=search] {
+        font-size: 30px;
+    }
+
+    header{
+        text-align: right;
+        padding-top: 6px;
+        padding-right: 10px;
+    }
+
+    .navlink{
+        padding: 0px 5px 0px 5px;
+        font-family: Roboto;
+        font-size: 13px;
+        color: rgb(99, 99, 99);
+        text-decoration: none;
+        margin-top: 20px;
+        position: relative;
+        top: -12px;
+    }
+    
+    .navlink:hover{
+        text-decoration: underline;
+    }
+
+    #pad{
+        width: 16px;
+        height: 16px;
+        display: inline-grid;
+        grid-template-rows: repeat(3, 4px);
+        grid-template-columns: repeat(3, 4px);
+        grid-gap: 2px;
+        position: relative;
+        top: -20px;
+        padding: 0px 20px 0px 20px;
+
+    }
+
+    .num{
+        background: rgb(99, 99, 99);
+        border-radius: 50%;
+    }
+
+    #icon{
+        border-radius: 50%;
+    }
+
+
+    #buttons{
+        margin: auto;
+        width: 500px;
+        margin-top: 20px;
+        position: relative;
+        text-align: center;
+    }
+
+    .click{
+        display: inline-block;
+        width: fit-content;
+        font-size: 14px;
+        padding: 0px 15px 0px 15px;
+        height: 37px;
+        background-color: rgb(247, 247, 247);
+        color:rgb(48, 48, 48);
+        border: 0px;
+        margin: 5px;
+        border-radius: 5px;
+    }
+
+    .click:hover{
+        padding: 0px 14px 0px 14px;
+        border: 1px solid rgb(207, 207, 207);
+        box-shadow: 0px 1px 2px 0px rgb(236, 236, 236);
+    }
+
+    #languages{
+        font-size: 12.5px;
+        text-align: center;
+        margin-top: 27px;
+    }
+
+    .langlink{
+        text-decoration: none;
+        margin: 0px 0px 0px 5px;
+    }
+
+    .langlink:hover{
+        text-decoration: underline;
+    }
+
+    #footer1{
+        font-size: 14px;
+        color:rgb(121, 121, 121);
+        position: absolute;
+        background-color: rgb(247, 247, 247);
+        height: 47px;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        border-top: 1px solid rgb(224, 224, 224);
+    }
+
+    #links1{
+        display: block;
+        margin: 15px 0px 0px 0px;
+        font-family: Roboto;
+        padding: 0px 45px 0px 45px;
+    }
+
+    #footer2{
+        font-size: 14px;
+        color:rgb(121, 121, 121);
+        position: absolute;
+        height: 47px;
+        bottom: 0px;
+        right: 0px;
+        width: fit-content;
+    }
+
+    #links2{
+        text-align: right;
+        display: block;
+        margin: 15px 0px 0px 0px;
+        font-family: Roboto;
+        padding: 0px 45px 0px 45px;
+    }
+
+    .footerlink:hover{
+        text-decoration: underline;
+    }
+
+
+
+
+    @media (max-width: 735px){
+        #footer1{
+            bottom: 47px;
+            text-align: center;
+        }
+        #footer2{
+            background-color: rgb(247, 247, 247);
+            width: 100%;
+        }
+        #links1{
+            margin: 0x 0px 0px 0px;
+        }
+        #links2{
+            text-align: center;
+        }
+
+    }
+
+    .footerlink{
+        text-decoration: none;
+        margin: 0px 15px 0px 15px;
+        color:rgb(99, 99, 99);
+    }
+
+
+
+</style>
+
+<html lang="en">
+<head>
+    <title>Google</title>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <header>
+        <a href="gmail.com" class="navlink">Gmail</a>
+        <a href="images.google.com" class="navlink">Images</a>
+        <div id="pad">
+            <div class="num"></div>
+            <div class="num"></div>
+            <div class="num"></div>
+            <div class="num"></div>
+            <div class="num"></div>
+            <div class="num"></div>
+            <div class="num"></div>
+            <div class="num"></div>
+            <div class="num"></div>
+        </div>
+        <a href="google.com"><img src="https://lh3.googleusercontent.com/ogw/ADGmqu9Q1ULIW_9QUG0w1NoXkIAMMqTVGGZ2NCWso_wlTA=s32-c-mo" id="icon"></a>
+    </header>
+
+    <!-- Body -->
+    <main>
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo" id="logo">
+        <div id="searchbox">
+            <input type="search" class="searchbar">
+            <div id="glass">
+                <div id="circle"></div>
+                <div id="line"></div>
+            </div>
+            <img src="https://www.freepngimg.com/thumb/microphone/70666-voice-microphone-google-search-logo-png-file-hd.png" id="mic">
+        </div>
+    </main>
+    <div id="buttons">
+        <button class="click">Google Search</button>
+        <button class="click">I'm Feeling Lucky</button>
+    </div>
+
+    <p id="languages">Google offered in: <a href="google.com" class="langlink">русский</a> <a href="google.com" class="langlink">кыргызча</a></p>
+
+
+    <footer>
+        <div id="footer1">
+            <div id="links1">
+                <a href="google.com" class="footerlink">About</a>
+                <a href="google.com" class="footerlink">Advertising</a> 
+                <a href="google.com" class="footerlink">Business</a> 
+                <a href="google.com" class="footerlink">How Search Works</a>
+            </div>
+        </div>
+        <div id="footer2">
+            <div id="links2">
+                <a href="google.com" class="footerlink">Privacy</a>
+                <a href="google.com" class="footerlink">Terms</a> 
+                <a href="google.com" class="footerlink">Settings</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
